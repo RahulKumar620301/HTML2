@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	@keyframes rotateCircle{
+		from{transform: rotate(0deg);} to {transform: rotate(360deg);}
+	}
+	@keyframes chgColor{
+		from{color: dimgray;} to {color: crimson;}
+	}
+	@keyframes line{
+		from{width: 10%;} to{width: 100%}
+	}
+
+	hr{animation-name: line; animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse; animation-delay: 6s}
+	body{background: linear-gradient(crimson,gold,coral);}
+	.container{background: white; width: 400px;margin:auto; padding: 40px 0px;}
+	.circle{border: inset crimson; width: 400px; padding: 185px 0px;
+		border-radius: 50%; margin:40px auto; text-align: center;
+		font-size: 30px; border-top: outset cadetblue;
+		animation: rotateCircle 2s infinite;}
+	h1{text-align: center; animation-name: chgColor; animation-duration: 3s; animation-iteration-count: 2;
+		animation-fill-mode: forwards;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>ANIMATION</h1><hr>
+		<div class="circle">Rahul</div>
+	</div>
+</body>
+</html>
